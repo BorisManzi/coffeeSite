@@ -1,0 +1,303 @@
+:root{
+    --main-color:#be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+ 
+ *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+.ctnr{
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 0 8%;
+    width: 100%;
+    height: 68px;
+    box-shadow: var(--box-shadow);
+}
+.logo{
+    margin-top: 10px ;
+}
+.logo img{
+    width: 40px;
+}
+.links{
+    margin-top: 22px;
+}
+.links ul li{
+    display: inline;
+    font-size: 20px;
+    padding: 10px;   
+}
+.links a{
+    color: var(--black);
+}
+.links a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.home{
+    display: flex;
+    align-items: left;
+    padding: 22% 0 0 9%;
+    text-align: center;
+}
+h1{
+    font-size:4rem;
+    color:var(--black);
+    font-family: 'Merienda One', cursive;
+}
+.content p{
+    padding: 17px;
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 2;
+    color: var(--black);
+    
+}
+.btn{
+    height: 43px;
+    background-color: var(--main-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn a{
+    padding: 40px;
+    color: var(--white);
+}
+.btn:hover{
+    background-color: var(--black);
+}
+
+.ctnr{
+    transition: .5s linear;
+}
+/* ==========   PAGE BODY   =====================================*/
+.pagebody{
+    margin: 4% 7% 2% 7%;
+}
+.about{
+    padding-top: 1%;
+    display: flex;
+}
+.svg{
+    width: 50%;
+}
+.svg img{
+    width: 96%;
+}
+.text{
+    padding: 10px 0 0 30px;
+    width: 50%;
+    margin-top: 9%;
+}
+h2{
+    font-size:2.6rem;
+    color:var(--black);
+    font-family: 'Merienda One', cursive;
+}
+p{
+    padding: 20px 0;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 2;
+    color: var(--black);
+}
+.facility-heading{
+    margin-top: 5%;
+}
+.facility-heading img{
+    width: 180px;
+}
+.facility-heading h2{
+    font-size: 2.5rem;
+}
+.facility-catgs{
+    display: flex;
+    text-align: center;
+    margin-top: 2%;
+}
+.facility-catgs h3{
+    margin-top: 4%;
+    color: rgba(0, 0, 0, 0.918);
+}
+.menu, .gallery, .team, .contact{
+    padding-top: 20px;
+}
+.menu-pcs{
+    padding: 4% 7%;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 29%);
+}
+.menu-pcs img{
+    width: 260px;
+    cursor: pointer;
+}
+/* .menu-pcs img:hover{
+    filter: saturate(110%);
+    width: 270px;
+    transition: .3s;
+    
+} */
+.gallery-pcs{
+    padding: 30px 5.5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.gallery-pcs img{
+    width: 100%;
+}
+.lastcont{
+    display: flex;
+}
+.lastsvg{
+    width: 70%;
+}
+h4{
+    font-size: 25px;
+}
+.lastcont .text{
+    margin-top: 12%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid var(--black);
+    padding: 40px 20px;
+}
+/* 
+.inputs{
+    display: flex;
+} */
+.inputs input{
+    border: 2px solid var(--black);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 13px 0;
+}
+.input-btn input{
+    margin-top: 14px;
+    padding: 12px 40px;
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+}
+.input-btn input:hover{
+    background-color: var(--black);
+}
+
+.details{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+footer{
+    text-align: center;
+}
+span{
+    color: var(--main-color);
+}
+footer .hr{
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ====================================MEDIA QUERY==================================================== */
+
+/* Properties For Hiding Media Queries */
+
+.icon{
+    display: none;
+}
+.smalllinks{
+    display: none;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+@media(max-width:780px){
+    
+    .icon img{
+        width: 30px;
+    }
+    .icon{
+        position: fixed;
+        cursor: pointer;
+        right: 7%;
+        display: block;
+        margin-top: 25px;
+    }
+    .links{
+        display: none;
+    }
+    
+    .smalllinks{
+        margin: 0;
+        padding: 20px;
+        right: 0;
+        display: none;
+        position: fixed;
+        width: 50%;
+        background-color: #5a452ff3;
+        height: 100vh;
+    }
+    .smalllinks img{
+        margin: -10px;
+        padding-bottom: 20px;
+        width: 25px;
+    }
+    .smalllinks ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    .smalllinks a{
+        color: var(--white);
+    }
+}
